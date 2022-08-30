@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Register of EKMT veicles</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.2.3/css/buttons.dataTables.min.css" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/datetime/1.1.2/css/dataTables.dateTime.min.css" />
+
+<!--      <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css" />-->
+<!--      <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.6.2/css/buttons.dataTables.css" />-->
+    <link rel="stylesheet" href="https://cdn.datatables.net/select/1.3.1/css/select.dataTables.css" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.5/css/responsive.dataTables.css" />
+
+    <link rel="stylesheet" href="style_home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <div class="topnav" id="topNav">
+        <a href="http://localhost:8082/home.html" ><i class="fa fa-home"></i> Home</a>
+        <a href="http://localhost:8082/data_Table.html" class="active"><i class="fa fa-truck"></i> EKMT</a>
+        <a href="#contact"><i class="fa fa-phone"></i> Contact</a>
+        <a href="#about"><i class="fa fa-info"></i> About</a>
+
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+</head>
+
+<body class=container">
+<br>
+<h1 align="center">Register of EKMT vehicles</h1>
+<table border="0" cellspacing="5" cellpadding="5"  >
+    <thead>
+    <h2>Filter by date issued:</h2>
+    </thead>
+
+    <tbody><tr>
+        <td>Minimum date:</td>
+        <td><input type="text" id="min" name="min"></td>
+    </tr>
+    <tr>
+        <td>Maximum date:</td>
+        <td><input type="text" id="max" name="max"></td>
+    </tr>
+    </tbody>
+</table>
+
+<br>
+
+    <table cellpadding="0" cellspacing="0" border="0" class="dataTable table table-striped" id="example">
+
+    </table>
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.js" ></script>
+<script src="https://code.jquery.com/jquery-migrate-3.3.0.js" ></script>
+<script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js" ></script>
+<!--<script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js" ></script>-->
+<script src="https://cdn.datatables.net/buttons/2.2.3/js/dataTables.buttons.min.js" ></script>
+<!--<script src="https://cdn.datatables.net/buttons/1.6.2/js/dataTables.buttons.js" ></script>-->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js" ></script>
+<script src="https://cdn.datatables.net/buttons/2.2.3/js/buttons.html5.min.js" ></script>
+<script src="https://cdn.datatables.net/buttons/2.2.3/js/buttons.print.min.js" ></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.2/moment.min.js" ></script>
+<script src="https://cdn.datatables.net/datetime/1.1.2/js/dataTables.dateTime.min.js" ></script>
+
+<script src="https://cdn.datatables.net/select/1.3.1/js/dataTables.select.js" ></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.js" ></script>
+<script src="https://cdn.datatables.net/responsive/2.2.5/js/dataTables.responsive.js" ></script>
+<script src="dataTables.altEditor.free.js" ></script>
+<script src="data_TableJS.js" ></script>
+
+<script src="JShome.js"></script>
+
+</div>
+</body>
+</html>
