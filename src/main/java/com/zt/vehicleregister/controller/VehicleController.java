@@ -18,14 +18,6 @@ public class VehicleController {
     @Autowired
     RabbitTemplate rabbitTemplate;
 
-    @GetMapping("/getVehicles")
-    public String getVehicles() throws JsonProcessingException {
-        final ObjectMapper mapper = new ObjectMapper();
-        final VehiclesHolder holder = new VehiclesHolder();
-        holder.setData(vehicleRepo.findAll());
-        return mapper.writeValueAsString(holder);
-    }
-
     @GetMapping("/getVehicle")
     public List<Vehicle> getVehicle()  {
         return vehicleRepo.findAll();
